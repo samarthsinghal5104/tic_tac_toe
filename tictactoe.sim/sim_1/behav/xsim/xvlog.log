@@ -1,0 +1,20 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/fsm_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/illegal_move_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module illegal_move_detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/nospace_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nospace_detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/position_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module position_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/position_registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module position_registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/tic_tac_toe_game.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tic_tac_toe_game
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/winner_detect_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module winner_detect_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/winner_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module winner_detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/tictactoe/tictactoe.srcs/sim_1/new/tb_tic_tac_toe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_tic_tac_toe
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/tictactoe/tictactoe.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

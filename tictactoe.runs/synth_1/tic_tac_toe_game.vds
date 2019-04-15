@@ -1,0 +1,304 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Mar 31 08:46:49 2019
+# Process ID: 848
+# Current directory: F:/vivado/tictactoe/tictactoe.runs/synth_1
+# Command line: vivado.exe -log tic_tac_toe_game.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tic_tac_toe_game.tcl
+# Log file: F:/vivado/tictactoe/tictactoe.runs/synth_1/tic_tac_toe_game.vds
+# Journal file: F:/vivado/tictactoe/tictactoe.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source tic_tac_toe_game.tcl -notrace
+Command: synth_design -top tic_tac_toe_game -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2672 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 430.434 ; gain = 98.148
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'tic_tac_toe_game' [F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/tic_tac_toe_game.v:23]
+INFO: [Synth 8-6157] synthesizing module 'position_registers' [F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/position_registers.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'position_registers' (1#1) [F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/position_registers.v:23]
+INFO: [Synth 8-6157] synthesizing module 'winner_detector' [F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/winner_detector.v:23]
+INFO: [Synth 8-6157] synthesizing module 'winner_detect_3' [F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/winner_detect_3.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'winner_detect_3' (2#1) [F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/winner_detect_3.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'winner_detector' (3#1) [F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/winner_detector.v:23]
+INFO: [Synth 8-6157] synthesizing module 'position_decoder' [F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/position_decoder.v:23]
+INFO: [Synth 8-226] default block is never used [F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/position_decoder.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'position_decoder' (4#1) [F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/position_decoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'illegal_move_detector' [F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/illegal_move_detector.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'illegal_move_detector' (5#1) [F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/illegal_move_detector.v:23]
+INFO: [Synth 8-6157] synthesizing module 'nospace_detector' [F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/nospace_detector.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'nospace_detector' (6#1) [F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/nospace_detector.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fsm_controller' [F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/fsm_controller.v:23]
+	Parameter IDLE bound to: 2'b00 
+	Parameter PLAYER bound to: 2'b01 
+	Parameter COMPUTER bound to: 2'b10 
+	Parameter GAME_DONE bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/fsm_controller.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'fsm_controller' (7#1) [F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/fsm_controller.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'tic_tac_toe_game' (8#1) [F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/tic_tac_toe_game.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 485.801 ; gain = 153.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 485.801 ; gain = 153.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 485.801 ; gain = 153.516
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'fsm_controller'
+INFO: [Synth 8-5544] ROM "player_play" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/fsm_controller.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/fsm_controller.v:45]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                  PLAYER |                               01 |                               01
+                COMPUTER |                               10 |                               10
+               GAME_DONE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'fsm_controller'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/fsm_controller.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'computer_play_reg' [F:/vivado/tictactoe/tictactoe.srcs/sources_1/new/fsm_controller.v:49]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 485.801 ; gain = 153.516
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 32    
++---Registers : 
+	                2 Bit    Registers := 9     
++---Muxes : 
+	  16 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 2     
+	  16 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 15    
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 15    
+	   4 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module position_registers 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 9     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 9     
+Module winner_detect_3 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
+Module position_decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 1     
+Module fsm_controller 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-3332] Sequential element (tic_tac_toe_controller/FSM_sequential_next_state_reg[1]) is unused and will be removed from module tic_tac_toe_game.
+WARNING: [Synth 8-3332] Sequential element (tic_tac_toe_controller/FSM_sequential_next_state_reg[0]) is unused and will be removed from module tic_tac_toe_game.
+WARNING: [Synth 8-3332] Sequential element (tic_tac_toe_controller/computer_play_reg) is unused and will be removed from module tic_tac_toe_game.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 659.871 ; gain = 327.586
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 659.871 ; gain = 327.586
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 659.871 ; gain = 327.586
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 659.871 ; gain = 327.586
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 659.871 ; gain = 327.586
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 659.871 ; gain = 327.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 659.871 ; gain = 327.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 659.871 ; gain = 327.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 659.871 ; gain = 327.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT2 |     9|
+|3     |LUT3 |    21|
+|4     |LUT4 |    10|
+|5     |LUT5 |     7|
+|6     |LUT6 |    35|
+|7     |FDCE |    20|
+|8     |IBUF |    12|
+|9     |OBUF |    20|
++------+-----+------+
+
+Report Instance Areas: 
++------+-------------------------+-------------------+------+
+|      |Instance                 |Module             |Cells |
++------+-------------------------+-------------------+------+
+|1     |top                      |                   |   135|
+|2     |  position_reg_unit      |position_registers |    79|
+|3     |  tic_tac_toe_controller |fsm_controller     |    23|
++------+-------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 659.871 ; gain = 327.586
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 659.871 ; gain = 327.586
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 659.871 ; gain = 327.586
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 756.273 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 756.273 ; gain = 437.004
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 756.273 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'F:/vivado/tictactoe/tictactoe.runs/synth_1/tic_tac_toe_game.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file tic_tac_toe_game_utilization_synth.rpt -pb tic_tac_toe_game_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 31 08:47:39 2019...

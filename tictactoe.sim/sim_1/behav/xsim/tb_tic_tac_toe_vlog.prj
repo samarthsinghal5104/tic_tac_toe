@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../tictactoe.srcs/sources_1/new/fsm_controller.v" \
+"../../../../tictactoe.srcs/sources_1/new/illegal_move_detector.v" \
+"../../../../tictactoe.srcs/sources_1/new/nospace_detector.v" \
+"../../../../tictactoe.srcs/sources_1/new/position_decoder.v" \
+"../../../../tictactoe.srcs/sources_1/new/position_registers.v" \
+"../../../../tictactoe.srcs/sources_1/new/tic_tac_toe_game.v" \
+"../../../../tictactoe.srcs/sources_1/new/winner_detect_3.v" \
+"../../../../tictactoe.srcs/sources_1/new/winner_detector.v" \
+"../../../../tictactoe.srcs/sim_1/new/tb_tic_tac_toe.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

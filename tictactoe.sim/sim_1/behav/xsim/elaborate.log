@@ -1,0 +1,20 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 811a0f59fb784b21b46cc9d990a08b44 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_tic_tac_toe_behav xil_defaultlib.tb_tic_tac_toe xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.position_registers
+Compiling module xil_defaultlib.winner_detect_3
+Compiling module xil_defaultlib.winner_detector
+Compiling module xil_defaultlib.position_decoder
+Compiling module xil_defaultlib.illegal_move_detector
+Compiling module xil_defaultlib.nospace_detector
+Compiling module xil_defaultlib.fsm_controller
+Compiling module xil_defaultlib.tic_tac_toe_game
+Compiling module xil_defaultlib.tb_tic_tac_toe
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_tic_tac_toe_behav
